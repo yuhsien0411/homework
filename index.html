@@ -1,20 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mainpage</title>
-</head>
-<body>
-    <p>
-        班級:資工二甲<br>
-        學號:1111032031<br>
-        姓名:白育憲
-    </p>
-    <a href='hw2.html' >作業1</a><br>
-    <a href='hw3.html' >九九乘法表</a><br>
-    <a href='hw4.html' >div排版</a><br>
-    <a href='blog.html' >部落格</a><br>
-</body>
+    <head>
+        <met#aeb3b8et="utf-8">
+        <title>homepage</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            input{border:0;
+            background-color:#14d3317b;
+            color:#fff;
+            border-radius:10px;
+            cursor:pointer;}
+
+            input:hover{
+            color:#003C9D;
+            background-color:#fff;
+            border:2px black;}
+        </style>
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 sticky-lg-top vh-100">
+                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
+                        <img class="w-100 img-fluid mb-4" src="boringmonkey.png" alt="Image">
+                        <h1 class="text-primary mt-2">Yu shien</h1>
+                        <div class="mb-4" style="height: 22px;">
+                            <h4 class="typed-text-output d-inline-block text-light"></h4>
+                            <div class="typed-text d-none">Web Designer, Coder , Crypto Trader</div>
+                        </div>
+                        <div class="d-flex align-items-end justify-content-between border-top">
+                            <!-- 跳到下方 -->
+                            <a href="#contact" class="btn w-50 btn-scroll">作品</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <!-- About Start -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">About Me</h1>
+                        <p>來自南投，現在就讀國立台中科技大學的五專，前年因疫情無聊，開始學寫程式。</p>
+                        <p>暑假開始學習投資，以及ai畫圖等</p>
+                        <div class="row mb-4">
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Name:</span> 白育憲
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Class:</span> 資工二甲
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Degree:</span> Beginer
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Experience:</span> 3 Years
+                            </div>
+                            
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Email:</span> paiyuhsien@gmail.com
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-md-4 col-lg-6 col-xl-4">
+                                <div class="d-flex bg-secondary p-4">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">1</h1>
+                                    <div class="ps-3">
+                                        <p class="mb-0">Years of</p>
+                                        <h5 class="mb-0">Experience</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6 col-xl-4">
+                                <div class="d-flex bg-secondary p-4">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">2</h1>
+                                    <div class="ps-3">
+                                        <p class="mb-0">Happy</p>
+                                        <h5 class="mb-0">Clients</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6 col-xl-4">
+                                <div class="d-flex bg-secondary p-4">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">20</h1>
+                                    <div class="ps-3">
+                                        <p class="mb-0">Complete</p>
+                                        <h5 class="mb-0">Projects</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- About End -->
+
+                    <!-- Skills Start -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">Skills</h1>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">HTML</p>
+                                        <p class="mb-2">95%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">CSS</p>
+                                        <p class="mb-2">55%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">PHP</p>
+                                        <p class="mb-2">0%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Javascript</p>
+                                        <p class="mb-2">20%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Python</p>
+                                        <p class="mb-2">90%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="skill mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Json</p>
+                                        <p class="mb-2">15%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Skills End -->
+
+                    <!-- Expericence Start -->
+                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="title pb-3 mb-5">Expericence</h1>
+                        <div class="border-start border-2 border-light pt-2 ps-5">
+                            <div class="position-relative mb-4">
+                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                <h5 class="mb-1">Web Designer</h5>
+                                <p class="mb-2"> <small>2022 - 2022</small></p>
+                                <p>今年才開始學的，目前只會簡單靜態網頁</p>
+                            </div>
+                            <div class="position-relative mb-4">
+                                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -50px;"></span>
+                                <h5 class="mb-1">Coding</h5>
+                                <p class="mb-2"><small>2020 - 2022</small></p>
+                                <p>主要是Python為主，寫一些提升工作效率的簡單程式和ai畫圖</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Expericence End -->
+
+                    <!-- Product Start -->
+                    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
+                        <h1 class="title pb-3 mb-5">作品</h1>
+						<p class="mb-4"> 網頁</p>
+                        <input type="button"  value="表格"  style="width:150px;height:50px;" onclick="location.href='hw2.html'">
+                        <input type="button" value="99乘法"  style="width:150px;height:50px;" onclick="location.href='hw3.html'">
+                        <input type="button" value="div 排版"  style="width:150px;height:50px;" onclick="location.href='hw4.html'">
+                        <input type="button" value="部落格"  style="width:150px;height:50px;margin-top: 5px;" onclick="location.href='blog.html'">
+                    </section>
+                    <!-- Product End -->
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>
