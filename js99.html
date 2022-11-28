@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead{
+            background-color: #000;
+            font-size:14px;
+            color:#FFF;}
+    </style>
+</head>
+<body>
+    <center>
+        <a href="index.html">回首頁</a>
+        <table border="1" width="300">
+            <thead >
+                <tr><th colspan="3">
+                    九九乘法表
+                </th></tr>
+            </thead>
+            <tbody  style="text-align:center ;">
+                <script >
+                    for (let i=1 ; i<10 ; i++)
+                    {   if (i==1 || i%3==1){document.write("<tr>")}
+                        document.write("<td>")
+                        for (let a=1 ;a<10 ;a++){document.write('<p>',i,'*',a,'=',i*a,'<br><p>')}
+                        document.write("</td>")
+                        if ( i%3==0){document.write("</tr>")}
+                            }
+                </script>
+
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>
